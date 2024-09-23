@@ -20,6 +20,6 @@ The tile is a wrapper module for the outer core, which handles serial communicat
 Communication happens in a daisy-chained manner, with each tile sending its own output as well as any outputs it receives from its neighbors. This allows the output of a single neuron to propogate to all of the other neurons in the layer, so that each tile can output the result of the layer to the next tile. This is necessary as each tile expects an entire vector (the output of the previous layer) as input.
 
 ## Simulation
-<img src="https://github.com/user-attachments/assets/777a461a-29c3-47b6-b213-9c8971cac383" width="300">
+<img src="https://github.com/user-attachments/assets/777a461a-29c3-47b6-b213-9c8971cac383" width="500">
 
 This project was built with Intel Quartus and simulated with ModelSim. Each module has appropriate testbenches to ensure the correctness of the components. The`outer_core_tb` simulates a 4x4 grid of cores using non-serial communication. In the screenshot of the waveform simulation, the outputs of the last layer (`/outer_tb/layer_outg[3]`) are consistent with the expected results.
