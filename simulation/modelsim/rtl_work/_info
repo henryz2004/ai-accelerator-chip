@@ -152,3 +152,74 @@ R30
 !i113 1
 R13
 R14
+vouter_core
+R1
+Z31 DXx4 work 18 outer_core_sv_unit 0 22 a8D]Z2]Ue@zCR_1MoiFW21
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 DZOe2X?BnRR>HeQPc0CC03
+IV>M]:LJQPif1lz]0iHe7M3
+Z32 !s105 outer_core_sv_unit
+S1
+R0
+Z33 w1727127168
+Z34 8C:/Hardware Design/AICHIP/outer_core.sv
+Z35 FC:/Hardware Design/AICHIP/outer_core.sv
+L0 17
+R9
+Z36 !s108 1727128005.000000
+Z37 !s107 C:/Hardware Design/AICHIP/outer_core.sv|
+Z38 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/outer_core.sv|
+!i113 1
+R13
+R14
+Xouter_core_sv_unit
+R1
+Va8D]Z2]Ue@zCR_1MoiFW21
+r1
+!s85 0
+31
+!i10b 1
+!s100 UTF@Q_97X1d5CFSFWjIn=1
+Ia8D]Z2]Ue@zCR_1MoiFW21
+!i103 1
+S1
+R0
+R33
+R34
+R35
+L0 7
+R9
+R36
+R37
+R38
+!i113 1
+R13
+R14
+vouter_tb
+R1
+R31
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 O`0n_UL0X1hk4c`T13T8Q3
+ITBdY<bZFelA2mL@XO11a[3
+R32
+S1
+R0
+R33
+R34
+R35
+L0 213
+R9
+R36
+R37
+R38
+!i113 1
+R13
+R14
