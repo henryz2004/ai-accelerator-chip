@@ -5,7 +5,7 @@ This chip uses a tiled architecture to compute a series of fixed-point multiply-
 The tiled architecture refers to the chip being composed of a grid of autonomous tiles, each tile connected to adjacent tiles. Each tile is analogous to an artificial neuron in Deep Learning. Information propagates from top to bottom, with the input vector being passed into the top layer of the grid and subsequent results being passed downwards to the next layer. The final result is the output from the bottom layer of the grid. The tiles communicate bidirectionally with its left/right neighbors to assemble the output of the entire layer, which is then propagated downwards as the input of the next neuron.
 
 ### Core
-![core](https://github.com/user-attachments/assets/7b95760c-ad53-4149-a95a-9523511c9951)
+![core](https://github.com/user-attachments/assets/7b95760c-ad53-4149-a95a-9523511c9951 | width=300)
 
 Within each tile is an outer and inner core. The inner core computes the dot product of the input vector with its weight vector, which computes the output of one neuron. The inner core sends the result to the outer core, which communicates with the tile's neighbors to assemble the entire layer's output. The output of the outer core is the output of an entire layer.
 
