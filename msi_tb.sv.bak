@@ -1,0 +1,7 @@
+/*
+Test bench for the mult_sum_int module
+*/
+
+module msi_tb ();
+
+endmodule 

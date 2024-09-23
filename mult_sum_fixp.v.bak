@@ -1,0 +1,84 @@
+/*
+fixed point multiply-then-accumulate module.
+Takes in weights and inputs as inputs, outputs
+dot product. Input dimension and resolution customizable
+
+By default, operates on s7.8 fixpoint and inputs of size 2
+*/
+module mult_sum_fixp#(
+	parameter dim=2,
+	parameter bitw=16,
+	parameter fracw=8
+)
+(
+	input [bitw-1:0] weights [0:dim-1],
+	input [bitw-1:0] x [0:dim-1],
+	output reg [bitw-1:0] out
+);
+
+	reg [bitw+fracw-1:0] z;
+
+	always @(*) begin
+		out = 0;
+		for (int i=0; i<dim; i++) begin
+			z = weights[i] * x[i];
+			out = out + z[bitw+fracw-1:fracw];
+		end
+	end
+
+
+endmodule
+
+
+/*
+Test bench for the mult_sum_fixp module
+
+Test the dot product functionality
+Test cases:
+ - [2 1.25] [5 -4] -> 15
+ - [-0.125 7] [-5 8.5] -> 57.[1101]
+*/
+
+module msf_tb ();
+
+	reg [15:0] weights [0:1];
+	reg [15:0] x [0:1];
+	reg [15:0] out;
+
+	mult_sum_int dut (
+		weights,
+		x,
+		out
+	);
+	
+	initial begin
+		weights = '{ {8'd2, 8'b0}, {8'd1, 8'b01000000} };
+		x = '{ {8'd5, 8'b0}, {8'd4, 8'b0} };
+		
+		$display("weights:");
+		foreach (weights[i]) begin
+			$display(" %b", weights[i]);
+		end
+		$display("x:");
+		foreach (x[i]) begin
+			$display(" %b", x[i]);
+		end
+		#10 $display("Result of dot product of s7.8: %s%d.%b", (out[15] ? "-" : "+"), out[14:8], out[7:0]);
+		
+		weights = '{ {-8'd0, 8'b00100000}, {8'd7, 8'b0} };
+		x = '{ {-8'd0, 8'b10000000}, {8'd8, 8'b1000000} };
+		
+		$display("weights:");
+		foreach (weights[i]) begin
+			$display(" %b", weights[i]);
+		end
+		$display("x:");
+		foreach (x[i]) begin
+			$display(" %b", x[i]);
+		end
+		#10 $display("Result of dot product of s7.8: %s%d.%b", (out[15] ? "-" : "+"), out[14:8], out[7:0]);
+		
+		#100;
+	end
+
+endmodule 

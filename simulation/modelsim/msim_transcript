@@ -1,0 +1,968 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do AI_chip_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Hardware\ Design/AICHIP {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:32:44 on Mar 28,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Hardware Design/AICHIP" C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_int.sv(21): (vlog-2110) Illegal reference to net "out".
+# -- Compiling module msi_tb
+# End time: 20:32:44 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./AI_chip_run_msim_rtl_verilog.do line 8
+# C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Hardware\ Design/AICHIP {C:/Hardware Design/AICHIP/mult_sum_int.sv}"
+dataset reload -f
+# Dataset not found: 
+vsim work.msi_tb
+# vsim work.msi_tb 
+# Start time: 20:33:05 on Mar 28,2024
+# Loading sv_std.std
+# Loading work.msi_tb
+# ** Error: (vsim-3033) C:/Hardware Design/AICHIP/mult_sum_int.sv(44): Instantiation of 'mult_sum_int' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /msi_tb File: C:/Hardware Design/AICHIP/mult_sum_int.sv
+#         Searched libraries:
+#             C:/Hardware Design/AICHIP/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 20:33:05 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:33:13 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_int.sv(21): (vlog-2110) Illegal reference to net "out".
+# -- Compiling module msi_tb
+# End time: 20:33:13 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:33:15 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_int.sv(21): (vlog-2110) Illegal reference to net "out".
+# -- Compiling module msi_tb
+# End time: 20:33:15 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+vsim work.msi_tb
+# vsim work.msi_tb 
+# Start time: 20:33:26 on Mar 28,2024
+# Loading sv_std.std
+# Loading work.msi_tb
+# ** Error: (vsim-3033) C:/Hardware Design/AICHIP/mult_sum_int.sv(44): Instantiation of 'mult_sum_int' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /msi_tb File: C:/Hardware Design/AICHIP/mult_sum_int.sv
+#         Searched libraries:
+#             C:/Hardware Design/AICHIP/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 20:33:26 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:37:30 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# -- Compiling module msi_tb
+# 
+# Top level modules:
+# 	msi_tb
+# End time: 20:37:30 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.msi_tb
+# vsim work.msi_tb 
+# Start time: 20:38:02 on Mar 28,2024
+# Loading sv_std.std
+# Loading work.msi_tb
+# Loading work.mult_sum_int
+add wave -position insertpoint  \
+sim:/msi_tb/weights
+add wave -position insertpoint  \
+sim:/msi_tb/x
+add wave -position insertpoint  \
+sim:/msi_tb/out
+run
+#   8
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:49:10 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# -- Compiling module msi_tb
+# 
+# Top level modules:
+# 	msi_tb
+# End time: 20:49:10 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:49:11 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# -- Compiling module msi_tb
+# 
+# Top level modules:
+# 	msi_tb
+# End time: 20:49:11 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+run
+run
+run
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:58:32 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# -- Compiling module msi_tb
+# 
+# Top level modules:
+# 	msi_tb
+# End time: 21:58:32 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.msi_tb
+# End time: 21:58:40 on Mar 28,2024, Elapsed time: 1:20:38
+# Errors: 0, Warnings: 0
+# vsim work.msi_tb 
+# Start time: 21:58:40 on Mar 28,2024
+# Loading sv_std.std
+# Loading work.msi_tb
+# Loading work.mult_sum_int
+add wave -position insertpoint  \
+sim:/msi_tb/weights
+add wave -position insertpoint  \
+sim:/msi_tb/x
+add wave -position insertpoint  \
+sim:/msi_tb/out
+run
+# weights:
+#    1
+#    1
+# x:
+#    2
+#    6
+# dot product result:   8
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:02:08 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# -- Compiling module msi_tb
+# 
+# Top level modules:
+# 	msi_tb
+# End time: 22:02:08 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+add wave -position insertpoint  \
+sim:/msi_tb/out
+run
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:02:27 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# -- Compiling module msi_tb
+# 
+# Top level modules:
+# 	msi_tb
+# End time: 22:02:27 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:02:41 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# -- Compiling module msi_tb
+# 
+# Top level modules:
+# 	msi_tb
+# End time: 22:02:41 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.msi_tb
+# End time: 22:02:55 on Mar 28,2024, Elapsed time: 0:04:15
+# Errors: 0, Warnings: 0
+# vsim work.msi_tb 
+# Start time: 22:02:55 on Mar 28,2024
+# Loading sv_std.std
+# Loading work.msi_tb
+# Loading work.mult_sum_int
+add wave -position insertpoint  \
+sim:/msi_tb/weights \
+sim:/msi_tb/x \
+sim:/msi_tb/out
+run
+# weights:
+#    1
+#    1
+# x:
+#    2
+#    6
+# dot product result:   8
+# weights:
+#  252
+#   10
+# x:
+#  250
+#  252
+# dot product result: 240
+# weights:
+#    1
+#    1
+# x:
+#    2
+#    6
+# dot product result:   8
+# weights:
+#   64
+#   90
+# x:
+#   64
+#    6
+# dot product result:  28
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_fixp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:09:48 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_fixp.v 
+# -- Compiling module mult_sum_fixp
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_fixp.v(14): 'Port' must not be declared to be an array: weights.
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_fixp.v(15): 'Port' must not be declared to be an array: x.
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_fixp.v(23): (vlog-2730) Undefined variable: 'int'.
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/mult_sum_fixp.v(23): near "i": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_fixp.v(23): (vlog-2730) Undefined variable: 'i'.
+# ** Error: (vlog-13036) C:/Hardware Design/AICHIP/mult_sum_fixp.v(23): near "++": Operator only allowed in SystemVerilog.
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/mult_sum_fixp.v(23): near ")": syntax error, unexpected ')', expecting ';'.
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/mult_sum_fixp.v(27): near "end": syntax error, unexpected end.
+# ** Error (suppressible): C:/Hardware Design/AICHIP/mult_sum_fixp.v(44): (vlog-2388) 'weights' already declared in this scope (mult_sum_fixp).
+# ** Error (suppressible): C:/Hardware Design/AICHIP/mult_sum_fixp.v(45): (vlog-2388) 'x' already declared in this scope (mult_sum_fixp).
+# ** Error (suppressible): C:/Hardware Design/AICHIP/mult_sum_fixp.v(46): (vlog-2388) 'out' already declared in this scope (mult_sum_fixp).
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/mult_sum_fixp.v(59): near "begin": syntax error, unexpected begin, expecting ';'.
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_fixp.v(62): (vlog-13161) unexpected '$display'
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/mult_sum_fixp.v(63): near "begin": syntax error, unexpected begin, expecting ';' or ','.
+# ** Error: C:/Hardware Design/AICHIP/mult_sum_fixp.v(68): (vlog-13205) Syntax error found in the scope following 'weights'. Is there a missing '::'?
+# End time: 23:09:48 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 15, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_fixp.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:13:54 on Mar 28,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_fixp.sv 
+# -- Compiling module mult_sum_fixp
+# -- Compiling module msf_tb
+# 
+# Top level modules:
+# 	msf_tb
+# End time: 23:13:54 on Mar 28,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.msf_tb
+# End time: 23:14:04 on Mar 28,2024, Elapsed time: 1:11:09
+# Errors: 12, Warnings: 0
+# vsim work.msf_tb 
+# Start time: 23:14:04 on Mar 28,2024
+# Loading sv_std.std
+# Loading work.msf_tb
+# Loading work.mult_sum_fixp
+add wave -position insertpoint  \
+sim:/msf_tb/weights \
+sim:/msf_tb/x \
+sim:/msf_tb/out
+run
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  0000010100000000
+#  0000010000000000
+# Result of dot product of s7.8: + 15.00000000
+# weights:
+#  0000000000100000
+#  0000011100000000
+# x:
+#  0000000010000000
+#  0000100001000000
+# Result of dot product of s7.8: + 57.11010000
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:44:08 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 00:44:08 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ic_tb
+# End time: 00:44:16 on Mar 29,2024, Elapsed time: 1:30:12
+# Errors: 0, Warnings: 0
+# vsim work.ic_tb 
+# Start time: 00:44:16 on Mar 29,2024
+# Loading sv_std.std
+# Loading work.ic_tb
+# Loading work.inner_core
+# Loading work.mult_sum_fixp
+add wave -position insertpoint  \
+sim:/ic_tb/weights \
+sim:/ic_tb/x \
+sim:/ic_tb/save_w \
+sim:/ic_tb/out
+run
+# multiplication without initializing weights:
+# x:
+#  0000010100000000
+#  0000010000000000
+# Result of dot product of s7.8: )  x.xxxxxxxx
+# proper weight initialization:
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  0000010100000000
+#  0000010000000000
+# Result of dot product of s7.8: + 15.00000000
+# x:
+#  0000000010000000
+#  0000100001000000
+# Result of dot product of s7.8: + 15.00000000
+# weights:
+#  0000000000100000
+#  0000011100000000
+# x:
+#  0000010100000000
+#  0000010000000000
+# Result of dot product of s7.8: + 57.11010000
+# x:
+#  0000000010000000
+#  0000100001000000
+# Result of dot product of s7.8: + 57.11010000
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:48:45 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 00:48:45 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ic_tb
+# End time: 00:48:52 on Mar 29,2024, Elapsed time: 0:04:36
+# Errors: 0, Warnings: 0
+# vsim work.ic_tb 
+# Start time: 00:48:52 on Mar 29,2024
+# Loading sv_std.std
+# Loading work.ic_tb
+# Loading work.inner_core
+# Loading work.mult_sum_fixp
+add wave -position insertpoint  \
+sim:/ic_tb/weights \
+sim:/ic_tb/x \
+sim:/ic_tb/save_w \
+sim:/ic_tb/out
+run
+# multiplication without initializing weights:
+# x:
+#  0000010100000000
+#  0000010000000000
+# Result of dot product of s7.8: )  x.xxxxxxxx
+# proper weight initialization:
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  0000010100000000
+#  0000010000000000
+# Result of dot product of s7.8: + 15.00000000
+# x:
+#  0000000010000000
+#  0000100001000000
+# Result of dot product of s7.8: + 11.01010000
+# weights:
+#  0000000000100000
+#  0000011100000000
+# x:
+#  0000010100000000
+#  0000010000000000
+# Result of dot product of s7.8: + 28.10100000
+# x:
+#  0000000010000000
+#  0000100001000000
+# Result of dot product of s7.8: + 57.11010000
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:58:37 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 00:58:37 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ic_tb
+# End time: 00:58:57 on Mar 29,2024, Elapsed time: 0:10:05
+# Errors: 0, Warnings: 0
+# vsim work.ic_tb 
+# Start time: 00:58:57 on Mar 29,2024
+# Loading sv_std.std
+# Loading work.ic_tb
+# Loading work.inner_core
+# Loading work.mult_sum_fixp
+add wave -position insertpoint  \
+sim:/ic_tb/weights \
+sim:/ic_tb/x \
+sim:/ic_tb/save_w \
+sim:/ic_tb/out
+run
+# multiplication without initializing weights:
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: )  x.xxxxxxxx
+# proper weight initialization:
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: + 69.00000000
+# x:
+#  1111111110000000
+#  0000100001000000
+# Result of dot product of s7.8: +  9.01010000
+# weights:
+#  1111111111100000
+#  0000011100000000
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: - 99.01100000
+# x:
+#  1111111110000000
+#  0000100001000000
+# Result of dot product of s7.8: - 25.11010000
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:26 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 01:04:26 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_fixp.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:26 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_fixp.sv 
+# -- Compiling module mult_sum_fixp
+# -- Compiling module msf_tb
+# 
+# Top level modules:
+# 	msf_tb
+# End time: 01:04:26 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_int.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:26 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_int.sv 
+# -- Compiling module mult_sum_int
+# -- Compiling module msi_tb
+# 
+# Top level modules:
+# 	msi_tb
+# End time: 01:04:26 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ic_tb
+# End time: 01:04:33 on Mar 29,2024, Elapsed time: 0:05:36
+# Errors: 0, Warnings: 0
+# vsim work.ic_tb 
+# Start time: 01:04:33 on Mar 29,2024
+# Loading sv_std.std
+# Loading work.ic_tb
+# Loading work.inner_core
+# Loading work.mult_sum_fixp
+add wave -position insertpoint  \
+sim:/ic_tb/weights \
+sim:/ic_tb/x \
+sim:/ic_tb/save_w \
+sim:/ic_tb/out
+run
+# multiplication without initializing weights:
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: )  x.xxxxxxxx
+# proper weight initialization:
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: + 69.00000000
+# x:
+#  1111111110000000
+#  0000100001000000
+# Result of dot product of s7.8: +  9.01010000
+# weights:
+#  1111111111100000
+#  0000011100000000
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: - 99.01100000
+# x:
+#  1111111110000000
+#  0000100001000000
+# Result of dot product of s7.8: - 25.11010000
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:13:53 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 01:13:53 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/mult_sum_fixp.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:13:53 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/mult_sum_fixp.sv 
+# -- Compiling module mult_sum_fixp
+# -- Compiling module msf_tb
+# 
+# Top level modules:
+# 	msf_tb
+# End time: 01:13:53 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ic_tb
+# End time: 01:14:04 on Mar 29,2024, Elapsed time: 0:09:31
+# Errors: 0, Warnings: 0
+# vsim work.ic_tb 
+# Start time: 01:14:04 on Mar 29,2024
+# Loading sv_std.std
+# Loading work.ic_tb
+# Loading work.inner_core
+# Loading work.mult_sum_fixp
+run
+# multiplication without initializing weights:
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: )  x.xxxxxxxx
+# proper weight initialization:
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: +  5.00000000
+# x:
+#  1111111110000000
+#  0000100001000000
+# Result of dot product of s7.8: +  9.01010000
+# weights:
+#  1111111111100000
+#  0000011100000000
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: - 99.01100000
+# x:
+#  1111111110000000
+#  0000100001000000
+# Result of dot product of s7.8: + 57.11010000
+add wave -position insertpoint  \
+sim:/ic_tb/weights \
+sim:/ic_tb/x \
+sim:/ic_tb/save_w \
+sim:/ic_tb/out
+run
+run
+run -all
+restart -f
+run
+# multiplication without initializing weights:
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: )  x.xxxxxxxx
+# proper weight initialization:
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: +  5.00000000
+# x:
+#  1111111110000000
+#  0000100001000000
+# Result of dot product of s7.8: +  9.01010000
+# weights:
+#  1111111111100000
+#  0000011100000000
+# x:
+#  0000010100000000
+#  1111110000000000
+# Result of dot product of s7.8: - 99.01100000
+# x:
+#  1111111110000000
+#  0000100001000000
+# Result of dot product of s7.8: + 57.11010000
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:09:48 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 15:09:48 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.inner_core
+# End time: 15:09:54 on Mar 29,2024, Elapsed time: 13:55:50
+# Errors: 0, Warnings: 0
+# vsim work.inner_core 
+# Start time: 15:09:54 on Mar 29,2024
+# Loading sv_std.std
+# Loading work.inner_core
+# Loading work.mult_sum_fixp
+run
+add wave -position insertpoint  \
+sim:/inner_core/dim \
+sim:/inner_core/bitw \
+sim:/inner_core/fracw \
+sim:/inner_core/x \
+sim:/inner_core/w_in \
+sim:/inner_core/save_w \
+sim:/inner_core/out \
+sim:/inner_core/weights
+restart -f
+run
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:11:12 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 15:11:13 on Mar 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.ic_tb
+# End time: 15:11:20 on Mar 29,2024, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 0
+# vsim work.ic_tb 
+# Start time: 15:11:20 on Mar 29,2024
+# Loading sv_std.std
+# Loading work.ic_tb
+# Loading work.inner_core
+# Loading work.mult_sum_fixp
+add wave -position insertpoint  \
+sim:/ic_tb/weights \
+sim:/ic_tb/x \
+sim:/ic_tb/save_w \
+sim:/ic_tb/out \
+sim:/ic_tb/expected
+run
+# Testcase passed
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:03 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 15:15:03 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+run
+# Testcase passed
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  1111111110000000
+#  0000100001000000
+# ** Error: Testcase failed. Expected: 0000100110100000, Actual: 0000010100000000
+#    Time: 20 ps  Scope: ic_tb File: C:/Hardware Design/AICHIP/inner_core.sv Line: 95
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:47 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 23:50:48 on Mar 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+add wave -position insertpoint  \
+sim:/ic_tb/weights \
+sim:/ic_tb/x \
+sim:/ic_tb/save_w \
+sim:/ic_tb/out \
+sim:/ic_tb/expected
+run
+# Testcase passed
+# weights:
+#  0000001000000000
+#  0000000101000000
+# x:
+#  1111111110000000
+#  0000100010000000
+# ** Error: Testcase failed. Expected: 0000100110100000, Actual: 0000010100000000
+#    Time: 20 ps  Scope: ic_tb File: C:/Hardware Design/AICHIP/inner_core.sv Line: 95
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:15 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 23:54:15 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:54:16 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 23:54:16 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+run
+# Testcase passed
+# Testcase passed
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:57:07 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/inner_core.sv(103): near "'1": syntax error, unexpected UNSIZED_BIT, expecting ';'.
+# ** Error: C:/Hardware Design/AICHIP/inner_core.sv(103): (vlog-13008) Unsized literal value 110001101100000 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd110001101100000) or reduce the literal value to fit in 32 bits.
+# End time: 23:57:07 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:57:42 on Mar 29,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 23:57:42 on Mar 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+run
+# Testcase passed
+# Testcase passed
+# Testcase passed
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:03:15 on Mar 30,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/inner_core.sv(121): near "'1": syntax error, unexpected UNSIZED_BIT, expecting ';'.
+# ** Error: C:/Hardware Design/AICHIP/inner_core.sv(121): (vlog-13008) Unsized literal value 100010010010000 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd100010010010000) or reduce the literal value to fit in 32 bits.
+# End time: 00:03:16 on Mar 30,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+restart -f
+# Loading work.inner_core
+run
+# Testcase passed
+# Testcase passed
+# Testcase passed
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:06:51 on Mar 30,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/inner_core.sv(121): near "'1": syntax error, unexpected UNSIZED_BIT, expecting ';'.
+# ** Error: C:/Hardware Design/AICHIP/inner_core.sv(121): (vlog-13008) Unsized literal value 100010010010000 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd100010010010000) or reduce the literal value to fit in 32 bits.
+# End time: 00:06:51 on Mar 30,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:07:09 on Mar 30,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 00:07:09 on Mar 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+run
+# Testcase passed
+# Testcase passed
+# Testcase passed
+# weights:
+#  1111111111100000
+#  0000011100000000
+# x:
+#  1111111110000000
+#  0000100010000000
+# ** Error: Testcase failed. Expected: 1100010010010000, Actual: 0011101110010000
+#    Time: 60 ps  Scope: ic_tb File: C:/Hardware Design/AICHIP/inner_core.sv Line: 133
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:08:21 on Mar 30,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 00:08:21 on Mar 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+run
+# Testcase passed
+# Testcase passed
+# Testcase passed
+# weights:
+#  1111111111100000
+#  0000011100000000
+# x:
+#  1111111110000000
+#  0000100010000000
+# ** Error: Testcase failed. Expected: 1100010010010000, Actual: 0011101110010000
+#    Time: 60 ps  Scope: ic_tb File: C:/Hardware Design/AICHIP/inner_core.sv Line: 133
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:08:43 on Mar 30,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# ** Error: (vlog-13069) C:/Hardware Design/AICHIP/inner_core.sv(121): near "'0": syntax error, unexpected UNSIZED_BIT, expecting ';'.
+# ** Error: C:/Hardware Design/AICHIP/inner_core.sv(121): (vlog-13008) Unsized literal value 011101111110000 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd011101111110000) or reduce the literal value to fit in 32 bits.
+# End time: 00:08:43 on Mar 30,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:08:49 on Mar 30,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 00:08:49 on Mar 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+run
+# Testcase passed
+# Testcase passed
+# Testcase passed
+# weights:
+#  1111111111100000
+#  0000011100000000
+# x:
+#  1111111110000000
+#  0000100010000000
+# ** Error: Testcase failed. Expected: 0011101111110000, Actual: 0011101110010000
+#    Time: 60 ps  Scope: ic_tb File: C:/Hardware Design/AICHIP/inner_core.sv Line: 133
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:11:00 on Mar 30,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 00:11:00 on Mar 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+run
+# Testcase passed
+# Testcase passed
+# Testcase passed
+# weights:
+#  1111111111100000
+#  0000011100000000
+# x:
+#  1111111110000000
+#  0000100010000000
+# ** Error: Testcase failed. Expected: 0011101110110000, Actual: 0011101110010000
+#    Time: 60 ps  Scope: ic_tb File: C:/Hardware Design/AICHIP/inner_core.sv Line: 133
+vlog -reportprogress 300 -work work {C:/Hardware Design/AICHIP/inner_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:13:16 on Mar 30,2024
+# vlog -reportprogress 300 -work work C:/Hardware Design/AICHIP/inner_core.sv 
+# -- Compiling module inner_core
+# -- Compiling module ic_tb
+# 
+# Top level modules:
+# 	ic_tb
+# End time: 00:13:16 on Mar 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.ic_tb
+# Loading work.inner_core
+run
+# Testcase passed
+# Testcase passed
+# Testcase passed
+# Testcase passed

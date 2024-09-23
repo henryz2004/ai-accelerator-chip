@@ -1,0 +1,21 @@
+/*
+Integer multiply-then-accumulate module.
+Takes in weights and inputs as inputs, outputs
+dot product
+Input dimension and resolution customizable
+
+By default, operates on 8-bit integers and inputs of size 2
+*/
+module mult_sum_int#(
+	parameter dim=2,
+	parameter bitw=8
+)
+(
+	input [bitw-1:0] weights [0:dim-1],
+	input [bitw-1:0] x [0:dim-1]
+);
+
+
+
+
+endmodule 

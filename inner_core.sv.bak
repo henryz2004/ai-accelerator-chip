@@ -1,0 +1,16 @@
+/*
+
+wrapper around mult_sum_fixp with io and commands
+
+*/
+
+module inner_core#(
+	parameter dim=2,
+	parameter bitw=16,
+	parameter fracw=8
+)
+(
+	
+);
+
+endmodule 

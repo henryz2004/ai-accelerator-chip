@@ -1,0 +1,7 @@
+/*
+acts as a layer, wrapper around inner_core
+with grid_layout and communication. does not
+handle packets
+
+*/
+module outer_core

@@ -1,0 +1,154 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Hardware Design/AICHIP/simulation/modelsim
+vic_tb
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1711771996
+!i10b 1
+!s100 G]W;Sa3cBn4UZgE;_OnOY3
+I`QA;L;?j0O4CORoI;`7IT0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 inner_core_sv_unit
+S1
+R0
+Z5 w1711771911
+Z6 8C:/Hardware Design/AICHIP/inner_core.sv
+Z7 FC:/Hardware Design/AICHIP/inner_core.sv
+Z8 L0 42
+Z9 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z10 !s108 1711771996.000000
+Z11 !s107 C:/Hardware Design/AICHIP/inner_core.sv|
+Z12 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/inner_core.sv|
+!i113 1
+Z13 o-work work
+Z14 tCvgOpt 0
+vinner_core
+R1
+R2
+!i10b 1
+!s100 J<b5mKfRV6nIO2_`A9l;k3
+IDiPTcGNfL`Rl<9zlEE]^M2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 7
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 1
+R13
+R14
+vmsf_tb
+R1
+Z15 !s110 1711689233
+!i10b 1
+!s100 IzZUjTW=2e<<0cWBaa[4`3
+I5h[jVYj^Vc8VJAc6^zhB92
+R3
+Z16 !s105 mult_sum_fixp_sv_unit
+S1
+R0
+Z17 w1711689213
+Z18 8C:/Hardware Design/AICHIP/mult_sum_fixp.sv
+Z19 FC:/Hardware Design/AICHIP/mult_sum_fixp.sv
+R8
+R9
+r1
+!s85 0
+31
+Z20 !s108 1711689233.000000
+Z21 !s107 C:/Hardware Design/AICHIP/mult_sum_fixp.sv|
+Z22 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/mult_sum_fixp.sv|
+!i113 1
+R13
+R14
+vmsi_tb
+R1
+Z23 !s110 1711688666
+!i10b 1
+!s100 Lc5YD2<dDAfcYhzB`@O=M2
+IfK5lEYGO9=PM>aCW3oF6=2
+R3
+Z24 !s105 mult_sum_int_sv_unit
+S1
+R0
+Z25 w1711677723
+Z26 8C:/Hardware Design/AICHIP/mult_sum_int.sv
+Z27 FC:/Hardware Design/AICHIP/mult_sum_int.sv
+L0 39
+R9
+r1
+!s85 0
+31
+Z28 !s108 1711688666.000000
+Z29 !s107 C:/Hardware Design/AICHIP/mult_sum_int.sv|
+Z30 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/mult_sum_int.sv|
+!i113 1
+R13
+R14
+vmult_sum_fixp
+R1
+R15
+!i10b 1
+!s100 :=hPniZTmKakVoMgc;Q:82
+II9HLJeXZih=7QQgm<doCe1
+R3
+R16
+S1
+R0
+R17
+R18
+R19
+L0 8
+R9
+r1
+!s85 0
+31
+R20
+R21
+R22
+!i113 1
+R13
+R14
+vmult_sum_int
+R1
+R23
+!i10b 1
+!s100 1D5?dgD[OCoYThUD>TCQE0
+I:=KWh_5n6:KiAV05iSPN73
+R3
+R24
+S1
+R0
+R25
+R26
+R27
+L0 9
+R9
+r1
+!s85 0
+31
+R28
+R29
+R30
+!i113 1
+R13
+R14

@@ -1,0 +1,368 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Hardware Design/AICHIP
+vbitstream_in
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 17 bitstream_sv_unit 0 22 QIL=g^^lH=4b9TVF8iB6z3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 GilB2ge78c4JUlH9FiGKY2
+Im<Q];aAP>78hLTJYo2Nj11
+Z4 !s105 bitstream_sv_unit
+S1
+R0
+Z5 w1712070659
+Z6 8C:/Hardware Design/AICHIP/bitstream.sv
+Z7 FC:/Hardware Design/AICHIP/bitstream.sv
+L0 7
+Z8 OV;L;10.5b;63
+Z9 !s108 1712071039.000000
+Z10 !s107 C:/Hardware Design/AICHIP/bitstream.sv|
+Z11 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/bitstream.sv|
+!i113 1
+Z12 o-work work
+Z13 tCvgOpt 0
+vbitstream_out
+R1
+R2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 fzF;h5fJCTmFP=7FPIZiU3
+IE3B8bT3YPK8A8LWWZo?h00
+R4
+S1
+R0
+R5
+R6
+R7
+L0 74
+R8
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Xbitstream_sv_unit
+R1
+VQIL=g^^lH=4b9TVF8iB6z3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?MfZkX^aoVKSDOzS6VDm=1
+IQIL=g^^lH=4b9TVF8iB6z3
+!i103 1
+S1
+R0
+R5
+R6
+R7
+L0 1
+R8
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vbitstream_tb
+R1
+R2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 2HJ>8FhjUgNgRcdaK17If0
+I[36LeakKZ?oQM2[A:MTg60
+R4
+S1
+R0
+R5
+R6
+R7
+L0 147
+R8
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfifo
+R1
+Z14 !s110 1711840387
+!i10b 1
+!s100 :39bNdQ@ZRfDAfS8ci:1M0
+ISJGTS44F6V:Ln21NJg:<]2
+R3
+Z15 !s105 fifo_sv_unit
+S1
+R0
+Z16 w1711838987
+Z17 8C:/Hardware Design/AICHIP/fifo.sv
+Z18 FC:/Hardware Design/AICHIP/fifo.sv
+L0 6
+R8
+r1
+!s85 0
+31
+Z19 !s108 1711840387.000000
+Z20 !s107 C:/Hardware Design/AICHIP/fifo.sv|
+Z21 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/fifo.sv|
+!i113 1
+R12
+R13
+vfifo_tb
+R1
+R14
+!i10b 1
+!s100 I^i42h3^H]`l?9bAfjK`A1
+I0ASKj1b2mjSTnFc2Wd6Ga1
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 61
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+R13
+vic_tb
+R1
+Z22 !s110 1711852471
+!i10b 1
+!s100 G]W;Sa3cBn4UZgE;_OnOY3
+I`QA;L;?j0O4CORoI;`7IT0
+R3
+Z23 !s105 inner_core_sv_unit
+S1
+R0
+Z24 w1711840153
+Z25 8C:/Hardware Design/AICHIP/inner_core.sv
+Z26 FC:/Hardware Design/AICHIP/inner_core.sv
+Z27 L0 42
+R8
+r1
+!s85 0
+31
+Z28 !s108 1711852471.000000
+Z29 !s107 C:/Hardware Design/AICHIP/inner_core.sv|
+Z30 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/inner_core.sv|
+!i113 1
+R12
+R13
+vinner_core
+R1
+R22
+!i10b 1
+!s100 J<b5mKfRV6nIO2_`A9l;k3
+IDiPTcGNfL`Rl<9zlEE]^M2
+R3
+R23
+S1
+R0
+R24
+R25
+R26
+L0 7
+R8
+r1
+!s85 0
+31
+R28
+R29
+R30
+!i113 1
+R12
+R13
+vmsf_tb
+R1
+Z31 !s110 1711921692
+!i10b 1
+!s100 U>4d:[n7R7b5;gzoKABS[2
+Ie[`50Xf[[9<BGP7=nNzTN1
+R3
+Z32 !s105 mult_sum_fixp_sv_unit
+S1
+R0
+Z33 w1711921687
+Z34 8C:/Hardware Design/AICHIP/mult_sum_fixp.sv
+Z35 FC:/Hardware Design/AICHIP/mult_sum_fixp.sv
+R27
+R8
+r1
+!s85 0
+31
+Z36 !s108 1711921692.000000
+Z37 !s107 C:/Hardware Design/AICHIP/mult_sum_fixp.sv|
+Z38 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/mult_sum_fixp.sv|
+!i113 1
+R12
+R13
+vmult_sum_fixp
+R1
+R31
+!i10b 1
+!s100 :=hPniZTmKakVoMgc;Q:82
+II9HLJeXZih=7QQgm<doCe1
+R3
+R32
+S1
+R0
+R33
+R34
+R35
+L0 8
+R8
+r1
+!s85 0
+31
+R36
+R37
+R38
+!i113 1
+R12
+R13
+vouter_core
+R1
+Z39 DXx4 work 18 outer_core_sv_unit 0 22 N_89OO9H21fdOV>jHTojE3
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 DZOe2X?BnRR>HeQPc0CC03
+IV>M]:LJQPif1lz]0iHe7M3
+Z40 !s105 outer_core_sv_unit
+S1
+R0
+Z41 w1712018861
+Z42 8C:/Hardware Design/AICHIP/outer_core.sv
+Z43 FC:/Hardware Design/AICHIP/outer_core.sv
+L0 17
+R8
+Z44 !s108 1712018864.000000
+Z45 !s107 C:/Hardware Design/AICHIP/outer_core.sv|
+Z46 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/outer_core.sv|
+!i113 1
+R12
+R13
+Xouter_core_sv_unit
+R1
+VN_89OO9H21fdOV>jHTojE3
+r1
+!s85 0
+31
+!i10b 1
+!s100 3YWKoa]YczYh7RSS?=nok3
+IN_89OO9H21fdOV>jHTojE3
+!i103 1
+S1
+R0
+R41
+R42
+R43
+L0 7
+R8
+R44
+R45
+R46
+!i113 1
+R12
+R13
+vouter_tb
+R1
+R39
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 jJ11?iNlmDTZ:d=IS[Cil1
+IoL2K<Qa8E?De^J>52Q`H_2
+R40
+S1
+R0
+R41
+R42
+R43
+L0 213
+R8
+R44
+R45
+R46
+!i113 1
+R12
+R13
+vtile
+R1
+Z47 !s110 1712075419
+!i10b 1
+!s100 58T^5iOW;c>5SKR3TjC@X3
+I=cSV^UARgk:PZJjVCQmm93
+R3
+Z48 !s105 tile_sv_unit
+S1
+R0
+Z49 w1712075410
+Z50 8C:/Hardware Design/AICHIP/tile.sv
+Z51 FC:/Hardware Design/AICHIP/tile.sv
+L0 4
+R8
+r1
+!s85 0
+31
+Z52 !s108 1712075419.000000
+Z53 !s107 C:/Hardware Design/AICHIP/tile.sv|
+Z54 !s90 -reportprogress|300|-work|work|C:/Hardware Design/AICHIP/tile.sv|
+!i113 1
+R12
+R13
+vtile_tb
+R1
+R47
+!i10b 1
+!s100 IA:N2;WJLQ`LhBMm=3T[o0
+IVX_ff:JNjQUdoad61>C673
+R3
+R48
+S1
+R0
+R49
+R50
+R51
+L0 208
+R8
+r1
+!s85 0
+31
+R52
+R53
+R54
+!i113 1
+R12
+R13
